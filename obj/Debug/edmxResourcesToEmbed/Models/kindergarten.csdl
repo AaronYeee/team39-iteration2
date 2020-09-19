@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="kindergarten" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="kindergartenContainer1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KindergartenSet" EntityType="kindergarten.Kindergarten" />
+  </EntityContainer>
+  <EntityType Name="Kindergarten">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceName" Type="String" Nullable="false" MaxLength="Max" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" />
+    <Property Name="Suburb" Type="String" Nullable="false" MaxLength="Max" />
+    <Property Name="Postcode" Type="String" Nullable="false" FixedLength="true" MaxLength="4" />
+    <Property Name="Phone" Type="String" Nullable="false" />
+    <Property Name="Email_Address" Type="String" Nullable="false" MaxLength="Max" />
+    <Property Name="location" Type="String" Nullable="false" MaxLength="Max" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,38 @@
+﻿#containerv1 {
+    text-align: center;
+}
+
+#title-headv1 {
+    background-color: #eff0f3;
+    display: inline-block;
+    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2), 2px 0px 2px rgba(0, 0, 0, 0.2);
+    width: 100%
+}
+
+#resultsv1 {
+    background-color: #eff0f3;
+    display: inline-block;
+    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.2), 2px 0px 2px rgba(0, 0, 0, 0.2);
+    width: 100%
+}
+
+
+.linkedinv1 {
+    text-decoration: none;
+    color: black;
+}
+
+    .linkedinv1:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+.btn-default {
+    background-color: #009688;
+    border: solid 1px #009688;
+    border-radius: 5px;
+    color: #E0F2F1;
+    cursor: pointer;
+}
+
+

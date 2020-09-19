@@ -1,0 +1,384 @@
+﻿@model IEnumerable<v2.Models.Kindergarten>
+
+@{
+    ViewBag.Title = "Update_table";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="~/Content/css/smallnav.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
+    <link href="~/Content/css/navbtn.css" rel="stylesheet" />
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+          type="text/css" />
+
+
+    @*This is used for the Geocoding Mapbox API*@
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-glgeocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-glgeocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' />
+
+    <link href="~/Content/css/map.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="row align-items-center justify-content-center" style="height:200px">
+        <div class=" site-blocks-cover text-black-50  mt-lg-5 text-center">
+            <h1>Find Kindergarten</h1>
+            <!-- <p class="post-meta">April 17, 2019 &bull; Posted by <a href="#">Admin</a> in <a href="#">Events</a></p>-->
+        </div>
+    </div>
+
+
+    <section class="site-section" data-aos="fade">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" data-aos="fade-right">
+                            <form action="Update_table" method="post">
+                                <input id="area_input" name="input_area" type="text" placeholder="Enter suburb or post code" style=" background-color: #fff; font-family: Roboto; font-size: 15px; font-weight: 300; margin-left: 12px; padding: 0 11px 0 13px; text-overflow: ellipsis; width: 300px" />
+                                <input type="submit" value="search" style="margin-left:40% ; margin-top:5px" />
+                            </form>
+                            <div class='sidebar pad2'>
+                                <div class='heading'>
+                                    <h>Our locations</h>
+                                </div>
+                                <div id='listings' class='listings'></div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-4 mb-lg-0 col-lg-7 order-lg-2" data-aos="fade-right">
+                            <div id='map' class="map pad2" style='width:850px; height: 550px;'></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <div><a id="tofees" href="#" class="scroll-down" address="true" style="bottom:0px;left:35%"></a></div>
+
+    <section>
+        <div class="container" id="fees" style="margin-top:150px">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-8 heading-section mb-5">
+                    <h2 class="text-black text-center mb-2">Wondering about Fees?</h2>
+                    <h3 class=" text-center text-black" style="margin-top:20px">
+                        Kindergarten term fees
+                    </h3>
+                    <p class="text-black">
+                        In 2020, it will cost <mark> $455 per term </mark> for a child to attend one of our kindergartens.
+                        A child can attend up to 15 hours of kindergarten per week. There are <mark>4 terms</mark>in the kindergarten year.<br /><br />
+
+                        All your fees go towards maintaining and operating the kindergarten.
+                        The fees cover the gap between the cost to run the kindergarten and funding from the State Government.
+                        Because funding changes every year, the fees we charge for kindergarten may also change.
+                    </p>
+
+                    <h3 class=" text-center text-black" style="margin-top:50px">
+                        Independently managed kindergartens
+                    </h3>
+                    <p class="text-black">
+                        Independently managed kindergartens <mark> set their own fees and structure</mark>. Please contact the individual kindergarten for more information.
+                    </p>
+
+
+                </div>
+
+                <div class="col-lg-8 heading-section mb-5">
+                    <h2 class="text-black text-center mb-2">What is Child care subsidy ?</h2>
+                    <h3 class=" text-center text-black" style="margin-top:20px">
+                        About who have the eligibility?
+
+                    </h3>
+                    <p class="text-black">
+                        1.Childcare requirement:
+                        <ul class="list-unstyled  primary mb-0 text-black">
+                            <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
+                            <li>
+                                Taking care of your child in any event 2 evenings or 14% for each fortnight.
+                            </li>
+                            <li>Need to pay for any approved child care service.</li>
+                        </ul>
+                        <br />
+                        2.Residency requirements (meet one of the following):
+                        <ul class="list-unstyled  primary mb-0 text-black">
+                            <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
+                            <li>
+                                You or your accomplice must be living in Australia and any one of you holds Australian citizenship or one of the following visa,
+                                a permanent visa, a Special Category visa, a certain temporary visa type.
+                            </li>
+                            <li>
+                                you or your accomplice are an understudy from abroad, supported by the Australian Government to concentrate in Australia .
+                            </li>
+                            <li>
+                                you're in difficulty, or unique conditions apply.
+                            </li>
+                        </ul>
+                        <br />
+
+                        3.Child relevant requirements:
+                        <ul class="list-unstyled  primary mb-0 text-black">
+                            <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
+                            <li>
+                                Strictly follow the Childhood schedule published by the Department of Health’s National Immunisation Program Schedule as well as the current Australian Immunisation Handbook.
+                            </li>
+                            <li>
+                                Apply for a medical exemption  on the Australian Immunisation Register (AIR).
+                            </li>
+                            <li>
+                                Your child is under 13 or 14 to 18 with disability.
+                            </li>
+                        </ul>
+                        <br />
+                        4.Requirements for additional subsidy (meet one of the following):
+                        <ul class="list-unstyled  primary mb-0 text-black">
+                            <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
+                            <li>
+                                You are a grandparent.
+                            </li>
+                            <li>
+                                You are transitioning to work.
+
+                            </li>
+                            <li>
+                                You are experiencing temporary financial hardship.
+                            </li>
+                        </ul>
+
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-lg-8 heading-section mb-5">
+                    <h2 class="text-black text-center mb-2">Kindergarten fee subsidy</h2>
+
+                    <p class="text-black">
+                        The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten
+                        delivered by a qualified early childhood teacher for free or at low cost.
+                    </p>
+
+                    <h3 class=" text-center text-black" style="margin-top:50px">
+                        How to calculate Kindergarten fee subsidy?
+                    </h3>
+                    <p class="text-black">
+                        The calculator below assists service providers to work out how much to charge families eligible for the kindergarten fee subsidy if the child is <mark>accessing more than 15 hours per week</mark> (or 600 hours per year).
+                        Service providers are required to provide eligible families with the<mark> first 15 hours per week (or 600 hours per year) of the program free </mark>of charge and charge no more than the average hourly rate (for that service) for the additional hours.
+                        All service providers offering more than 15 hours per week (or 600 hours per year) are encouraged to consider providing the entire program to eligible children free of charge.
+                        After entering your program's weekly hours and annual fee in the green cells, it will calculate the cost to families per year, term, week and hour.
+
+                    </p>
+                    <div id="containerv1">
+                        <div id="title-headv1 ">
+                            <h1 class="text-center" style="color:#0d0d0d">
+                                Kindergarten fee subsidy - calculator
+
+                            </h1>
+                            <p class="text-center" style="color:#0d0d0d">What are eligible families required to Pay?</p>
+
+                        </div>
+                        <div id="resultsv1">
+                            <form id="aform" name="quizForm" onsubmit="submitAnswers()">
+                                <p>
+                                    <mark>Weekly program hours:</mark><br />
+                                    <input type="number" name="q1" id="q1" />
+                                </p>
+
+                                <p>
+                                    <mark>Annual program fee:</mark><br />
+                                    <input type="number" name="q2" id="q2" />
+                                </p>
+                                <p>
+                                    Weekly program hours: 15
+                                </p>
+                                <p>
+                                    Annual subsidy amount: 1317 AUD
+                                </p>
+                                <p>
+                                    <mark> Subsidy Gap </mark><br />
+                                    Gap between subsidy and program fee:
+                                    <div id="gapfees" />
+
+                                </p>
+                                <p>
+                                    Fee for additional program hours:
+                                    <div id="gaphours" />
+                                </p>
+                                <p><mark>Cost of additional program hours above the subsidised 15 per week?</mark></p>
+                                <p>Annual:</p>
+                                <div id="AnnualFee" />
+                                <p>Term:</p>
+                                <div id="TermFee" />
+                                <p>Week:</p>
+                                <div id="WeekFee" />
+
+                                <input type="submit" value="Caculate" />
+
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="component">
+            <!-- Start Nav Structure -->
+            <button class="csstransforms cn-button" id="cn-button">+</button>
+            <div class="csstransforms cn-wrapper" id="cn-wrapper">
+                <ul>
+                    <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
+                    <li><a><span class="icon-arrow-up">@Html.ActionLink(" ", "KinderElig", "Home", new object { }, new { @class = "icon-arrow-up" })</span></a></li>
+                    <li><a>now<br />3/3</a></li>
+                    <li><a href="#"><span class="icon-home">@Html.ActionLink(" ", "Index", "Home", new object { }, new { @class = "icon-home" })</span></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+
+                </ul>
+            </div>
+            <div id="cn-overlay" class="cn-overlay"></div>
+            <!-- End Nav Structure -->
+
+        </div><!-- /container -->
+        <div style="margin-top:10px">
+            <div class="multi-button">
+                <button><span class="icon-arrow-left"></span> @Html.ActionLink("Kindergarten Eligibility", "KinderElig", "Home", new { @class = "button", @id = "navbtn" })</button>
+                <button>@Html.ActionLink("kindergarten Enrollment", "EnrollmentMore", "Home", new object { }, new { @class = "button", @id = "navbtn" }) <span class="icon-arrow-right"></span></button>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <table class="table" style="display:none">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suburb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Postcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email_Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.location)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="coordinates">
+
+                <th class="a_Id">
+                    @Html.DisplayFor(modelItem => item.Id)
+                </th>
+
+                <th class="S_name">
+                    @Html.DisplayFor(modelItem => item.ServiceName)
+                </th>
+                <td class="address1">
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td class="suburb1">
+                    @Html.DisplayFor(modelItem => item.Suburb)
+                </td>
+                <td class="postcode1">
+                    @Html.DisplayFor(modelItem => item.Postcode)
+                </td>
+                <td class="phone1">
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td class="eaddress1">
+                    @Html.DisplayFor(modelItem => item.Email_Address)
+                </td>
+                <td class="location">
+                    @Html.DisplayFor(modelItem => item.location)
+                </td>
+
+
+            </tr>
+        }
+
+
+    </table>
+
+
+
+
+
+
+
+
+    <script src="~/Scripts/js/location.js"></script>
+    <script>
+        $("#naviii11").hide();
+    </script>
+    <script src="~/Scripts/js/demo1.js"></script>
+    <script src="~/Scripts/js/polyfills.js"></script>
+
+    <script>
+        $(function () {
+            $('#tofees').click(function () {
+                $('html, body').animate({ scrollTop: $('#fees').offset().top }, 'slow');
+                return false;
+            });
+        });
+
+    </script>
+    <script src="~/Scripts/js/feesCalcu.js"></script>
+    <script>
+        $("#aform").submit(function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+
+</body>
+</html>
+
+

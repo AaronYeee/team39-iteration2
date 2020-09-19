@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="~/Content//images/tab12.png" />
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="~/Content/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="~/Content/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="~/Content/css/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/css-nav.css">
+    <link href="~/Content/css/quickNavigation.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title - Ready for kinder</title>
+   
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+
+        <header id="header001"class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-6 col-xl-2">
+                        <h1 class="mb-0 site-logo"><a href="#home-section" class="h2 mb-0"><img src="~/Content/images/cai12.png" style="max-width:80%" /><span class="text-primary">.</span> </a></h1>
+                    </div>
+
+                    <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation" id="naviii11">
+
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a class="nav-link">@Html.ActionLink("Home Page", "Index", "Home", new { @class = "nav-link" })</a></li>
+                                <li><a href="#kinder-education" class="nav-link">Kindergarten Education</a></li>
+                                <li class="has-children">
+                                    <a href="#about-section" class="nav-link">About</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#about-section" class="nav-link">About Us</a></li>
+                                        <li><a href="#current-trend" class="nav-link">Current Trends</a></li>
+                                        <li><a href="#Eligibility" class="nav-link">Eligibility</a></li>
+                                        <li><a href="#kg-location" class="nav-link">Locate a Kindergarten</a></li>
+                                        <!--<li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+                                        <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                                        <li class="has-children">
+                                            <a href="#">More Links</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Menu One</a></li>
+                                                <li><a href="#">Menu Two</a></li>
+                                                <li><a href="#">Menu Three</a></li>
+                                            </ul>
+                                        </li>-->
+                                    </ul>
+                                </li>
+                                <li><a href="#question-section" class="nav-link">Frequently Ask Questions</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+
+             
+
+        </header>
+
+
+
+
+
+
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    <script src="~/Scripts/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/js/jquery-ui.js"></script>
+    <script src="~/Scripts/js/popper.min.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/owl.carousel.min.js"></script>
+    <script src="~/Scripts/js/jquery.countdown.min.js"></script>
+    <script src="~/Scripts/js/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/js/aos.js"></script>
+    <script src="~/Scripts/js/jquery.fancybox.min.js"></script>
+    <script src="~/Scripts/js/jquery.sticky.js"></script>
+    <script src="~/Scripts/js/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Hide div 2 by default
+            $('#Eli-1').show();
+            $('#Eli-2').hide();
+            $('#Eli-3').hide();
+            $('#Eli-4').hide();
+            $('#Eli-1').addClass("active");
+            $('#Eli-2').removeClass("active");
+            $('#Eli-3').removeClass("active");
+            $('#Eli-4').removeClass("active");
+
+            $('#Eli-1').removeClass("done");
+            $('#Eli-2').removeClass("done");
+            $('#Eli-3').removeClass("done");
+            $('#Eli-4').removeClass("done");
+
+
+            $('#step11').click(function () {
+
+                $('#Eli-1').show();
+                $('#Eli-2').hide();
+                $('#Eli-3').hide();
+                $('#Eli-4').hide();
+
+
+
+
+                $('#Eli-2').removeClass("active");
+                $('#Eli-3').removeClass("active");
+                $('#Eli-4').removeClass("active");
+
+                $('#Eli-2').removeClass("done");
+                $('#Eli-3').removeClass("done");
+                $('#Eli-4').removeClass("done");
+
+
+            });
+
+            $('#step12').click(function () {
+                $('#Eli-1').hide();
+                $('#Eli-3').hide();
+                $('#Eli-4').hide();
+
+                $('#Eli-2').show();
+
+                $('#Eli-2').removeClass("done");
+                $('#Eli-1').addClass("done");
+
+                $('#Eli-2').addClass("active");
+
+                $('#Eli-3').removeClass("active");
+                $('#Eli-4').removeClass("active");
+
+
+                $('#Eli-3').removeClass("done");
+                $('#Eli-4').removeClass("done");
+
+
+            });
+
+            $('#step13').click(function () {
+                $('#Eli-1').hide();
+                $('#Eli-2').hide();
+                $('#Eli-4').hide();
+                $('#Eli-3').show();
+
+                $('#Eli-2').addClass("done");
+                $('#Eli-3').addClass("active");
+
+                $('#Eli-4').removeClass("active");
+                $('#Eli-3').removeClass("done");
+                $('#Eli-4').removeClass("done");
+
+
+
+
+
+            });
+
+            $('#step14').click(function () {
+                $('#Eli-1').hide();
+                $('#Eli-2').hide();
+                $('#Eli-3').hide();
+                $('#Eli-4').show();
+
+                $('#Eli-3').addClass("done");
+                $('#Eli-4').addClass("active");
+
+
+
+
+
+
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
