@@ -27,11 +27,15 @@ $(".coordinates").each(function () {
     var location_info1 = location_info.split(",");
     var longitude = location_info1[1];
     var latitude = location_info1[0];
+
+
     var phonenumber = $(".phone1", this).text().trim();
     var suburb = $(".suburb1", this).text().trim();
     var e_address = $(".eaddress1", this).text().trim();
     var address = $(".address1", this).text().trim();
     var name = $(".S_name", this).text().trim();
+    var type = $(".Type1", this).text().trim();
+    var rating = $(".rating1", this).text().trim();
 
 
 
@@ -51,7 +55,9 @@ $(".coordinates").each(function () {
             "email": e_address,
             "suburb": suburb,
             "address": address,
-            "name": name
+            "name": name,
+            "type": type,
+            "rating": rating
         }
     
     };
@@ -69,6 +75,7 @@ var stores = {
 stores.features.forEach(function (store, i) {
     store.properties.id = i;
 });
+
 
 
 var map = new mapboxgl.Map({
@@ -121,10 +128,13 @@ function buildLocationList(data) {
         /* Add details to the individual listing. */
         var details = listing.appendChild(document.createElement('div'));
         details.innerHTML = prop.address;
-        if (prop.contact_number) {
-            details.innerHTML += ' <br\>tel: ' + prop.contact_number;
-        }
-        details.innerHTML +="<br\>"+prop.suburb;
+        details.innerHTML += "<br\> Service Type:<br\>" + prop.type;
+
+        
+        
+
+
+
 
 
 
@@ -166,9 +176,12 @@ function createPopUp(currentFeature) {
     var popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+        '<h4>' + currentFeature.properties.address + '</h4>' +
+        '<h4>' + "Tel:" + currentFeature.properties.contact_number + '</h4>'+
+        '<h4>'+"Rating:" + currentFeature.properties.rating + '</h4>')
         .addTo(map);
 }
+
 
 
 

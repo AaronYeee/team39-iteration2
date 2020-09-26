@@ -1,7 +1,7 @@
 ﻿
 @{
-    ViewBag.Title = "AboutKG";
-    <!--Layout = "~/Views/Shared/_Layout.cshtml";-->
+    ViewBag.Title = "why kindergarten";
+    
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
@@ -15,19 +15,9 @@
     <link href="~/Content/css/navbtn.css" rel="stylesheet" />
 </head>
 <body id="nav121">
-    <div class="site-blocks-cover bg-light" data-aos="fade">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-12 mt-lg-5 text-center">
-                    <h1>About Kindergarten</h1>
-                    <!-- <p class="post-meta">April 17, 2019 &bull; Posted by <a href="#">Admin</a> in <a href="#">Events</a></p>-->
-                </div>
-                <p>Click me!</p>
-            </div>
-
-            <div><a href="#" class="scroll-down" address="true" style=" left: 50%"></a></div>
-        </div>
-    </div>
+   
+<div style="height:200px"></div>
+   
 
     <!--mainBody-->
     <!--4blocks-->
@@ -139,39 +129,24 @@
 
 
 
-        <div class="component">
-            <!-- Start Nav Structure -->
-            <button class="csstransforms cn-button" id="cn-button">+</button>
-            <div class="csstransforms cn-wrapper" id="cn-wrapper">
-                <ul>
-                    <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
-                    <li><a><span></span></a></li>
-                    <li><a>now<br />1/4</a></li>
-                    <li><a href="#"><span class="icon-home">@Html.ActionLink(" ", "Index", "Home", new { @class = "icon-home" })</span></a></li>
-                    <li><a>next<br />2/4</a></li>
-                    <li><a href="#"><span class="icon-arrow-up">@Html.ActionLink(" ", "LinKG", "Home", new { @class = "icon-arrow-up" })</span></a></li>
-
-                </ul>
-            </div>
-            <div id="cn-overlay" class="cn-overlay"></div>
-            <!-- End Nav Structure -->
 
 
 
 
-        </div><!-- /container -->
+      <!-- /container -->
         <div style="margin-top:100px" data-aos="fade-right">
             <div class="multi-button">
-                <button><span class="icon-arrow-left"></span> @Html.ActionLink("Home", "Index", "Home", new { @class = "button", @id = "navbtn" })</button>
-                <button>@Html.ActionLink("kindergarten Learning", "LinKG", "Home", new { @class = "button", @id = "navbtn" }) <span class="icon-arrow-right"></span></button>
+                <button><span class="icon-arrow-left"></span><a href="~/Home/Index" class="button" id="navbtn"> Home </a></button>
 
+                <button><a href="~/Home/Differences" class="button" id="navbtn"> Find differences </a> <span class="icon-arrow-right"></span></button>
+                
             </div>
         </div>
 
 
-   
 
 
+    
     </section>
 
     <!--end of 4 blocks-->
@@ -184,11 +159,8 @@
         });
 
     </script>
-    <script>
-        $("#naviii11").hide();
-    </script>
-    <script src="~/Scripts/js/demo1.js"></script>
-    <script src="~/Scripts/js/polyfills.js"></script>
+
+   
 
 </body>
 </html>

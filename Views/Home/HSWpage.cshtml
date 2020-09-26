@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "HSWpage";
+    ViewBag.Title = "Health, Safety & Wellbeing";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -15,51 +15,37 @@
 <body id="nav121">
 
     <!--title part-->
-    <div class="site-blocks-cover bg-light" data-aos="fade">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-12 mt-lg-5 text-center">
-                    <h1>HEALTH, SAFETY & WELLBEING</h1>
-                    <p class="post-meta">The health, safety and wellbeing of our people – big and small – is always our highest priority.</p>
-                </div>
-            </div>
-            <div><a href="#" class="scroll-down" address="true" style=" left: 50%"></a></div>
-        </div>
-    </div>
+
+    <div style="height:200px"></div>
+
+
+ 
 
     <!--mainBody-->
-    <section class="site-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 blog-content">
 
-                    <h2 class="lead mb-lg-6">
-                        You’ll find some of the details of how we’re making sure our children, families and team members remain safe and healthy in our Centres at all times.
-                    </h2>
-
-                    <div class="row mb-5">
-
-                     
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--main body-->
     <!--4blocks-->
-    <div class="col-lg-12 text-center heading-section mb-5">
-        <h2 class="text-black mb-2">Our Children and Families</h2>
-        <p>
-            It is important we are both safe and practical when it comes to our policies around health, safety and wellbeing. <br />
-            We know parents are busy, so our policies – whilst grounded in safety – also consider life’s practicalities.
-        </p>
-    </div>
-    <section class="site-section" id="kinder-education">
+   
+        
+
+   
+    <section class="site-section" id="kinder-education" style="margin-top:10px">
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-6 text-center heading-section mb-5">
+                <h2 class="text-black mb-2">HEALTH, SAFETY & WELLBEING</h2>
+                <p class="post-meta">The health, safety and wellbeing of our people – big and small – is always our highest priority.</p>
+                <p class="text-center">
+                    It is important we are both safe and practical when it comes to our policies around health, safety and wellbeing. <br />
+                    We know parents are busy, so our policies – whilst grounded in safety – also consider life’s practicalities.
+                </p>
+            </div>
+        </div>
 
         <div class="container">
 
             <div class="row hover-1-wrap mb-5 mb-lg-0">
                 <div class="col-12">
+                   
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right">
                             <a href="#" class="hover-1">
@@ -67,6 +53,7 @@
                             </a>
                         </div>
                         <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
+
                             <h2 class="text-black">Drop off and pick-up:</h2>
                             <p class="mb-4">
                                 Usually  mornings and afternoons are a busy time for all the parents,
@@ -145,7 +132,7 @@
                                     3.No child must be left unattended
                                 </li>
                             </ul>
-                            
+
 
                         </div>
                     </div>
@@ -180,56 +167,23 @@
                 </div>
                 <div class="col-lg-6 text-left heading-section mb-5" data-aos="fade-up" data-aos-delay="100">
 
-                    <img src="~/Content/images/about1.png" alt="Image" class="img-fluid">
-
+                
+                    <img src="~/Content/images/Heath W S.jpg" alt="Image" class="img-fluid" />
                 </div>
             </div>
         </div>
-        <div class="component">
-            <!-- Start Nav Structure -->
-            <button class="csstransforms cn-button" id="cn-button">+</button>
-            <div class="csstransforms cn-wrapper" id="cn-wrapper">
-                <ul>
-                    <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
-                    <li><a><span class="icon-arrow-up">@Html.ActionLink(" ", "LinKG", "Home", new { @class = "icon-arrow-up" })</span></a></li>
-                    <li><a>now<br />3/4</a></li>
-                    <li><a href="#"><span class="icon-home">@Html.ActionLink(" ", "Index", "Home", new { @class = "icon-home" })</span></a></li>
-                    <li><a>next<br />4/4</a></li>
-                    <li><a href="#">@Html.ActionLink(" ", "FSupport", "Home", new { @class = "icon-arrow-up" })<span class="icon-arrow-up"></span></a></li>
-
-                </ul>
-            </div>
-            <div id="cn-overlay" class="cn-overlay"></div>
-            <!-- End Nav Structure -->
-
-
-
-
-        </div><!-- /container -->
+       
         <div style="margin-top:100px" data-aos="fade-right">
             <div class="multi-button">
-                <button><span class="icon-arrow-left"></span> @Html.ActionLink("Kindergarten Learning", "LinKG", "Home", new { @class = "button", @id = "navbtn" })</button>
-                <button>@Html.ActionLink("Financial Support", "FSupport", "Home", new { @class = "button", @id = "navbtn" }) <span class="icon-arrow-right"></span></button>
-
+                <button><span class="icon-arrow-left"></span> <a href="~/Home/LinKG" class="button" id="navbtn"> Advantages in Kindergartens </a></button>
+                <button><a href="~/Home/FSupport" class="button" id="navbtn"> Financial Support </a> <span class="icon-arrow-right"></span></button>
+                
             </div>
         </div>
 
-        <script src="~/Scripts/js/demo1.js"></script>
-        <script src="~/Scripts/js/polyfills.js"></script>
-        <script>
-            $(function () {
-                $('.scroll-down').click(function () {
-                    $('html, body').animate({ scrollTop: $('section.site-section').offset().top }, 'slow');
-                    return false;
-                });
-            });
 
-        </script>
-        <script>
-            $("#naviii11").hide();
-        </script>
     </section>
     <!--end of about us-->
 
-    </body>
+</body>
 </html>

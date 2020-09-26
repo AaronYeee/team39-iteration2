@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewBag.Title = "VisualG";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+ 
+    <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
+    <link href="~/Content/css/navbtn.css" rel="stylesheet" />
+</head>
+<body id="nav121">
+    <div style="height:200px"></div>
+    <section class="site-section" id="kinder-education">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center heading-section mb-5">
+                <h2 class="text-black mb-2">
+                    Victorian Kindergarten education trends
+                </h2>
+                <h3 class="text-black">Child care and early childhood education </h3>
+                <p>
+                    Child care and early childhood education hold a key place in the wellbeing of families and their local communities.
+                    They provide key opportunities for children's development and social engagement, and for enabling families to engage fully in the labour market, each of which is important in contributing to stronger families.
+                </p>
+            </div>
+        </div>
+
+            <div class="container max-width-adaptive-sm">
+                <div class="text-component line-height-lg v-space-md">
+                    <div class="text-center heading-section" style="margin-top:100px">
+                        <h3 class="text-black">About the Trends of Kindergarten education </h3>
+                    </div>
+                    <div class="text-component padding-md text-black">
+                        <h>The pie chart below shows the Kindergarten participation in four different types of Local government areas(LGAs) of Victoria.
+                        The line graph depicts the participation percentage of  Victorian areas classified as cities, shires,rural cities and borough. </h>
+                        <h> From the graph we can see that there has been a tremendous increase In kindergarten participation in all the areas from 2008 to 2017.
+                        Learning from trends we encourage migrant parents to enroll their children into Kindergartens as the Department of Education,Victoria has provided quality education and early childhood development services for children.</h>
+                        <h style="margin-bottom:30px">
+                            For viewing the trend over these years, hover over the line charts and explore the changing trends for respective areas of Victoria. Parents can also select the legend and compare the participation percentage region wise on the pie chart.
+                        </h>
+                    </div>
+
+                </div>
+
+
+                <div class="container-fluid" style="height:1000px;margin:20px">
+
+
+                    <div id="container" style="height: 80%"></div>
+
+                    <div style="margin-top:10px">
+
+                        <div class="multi-button">
+                            <button><span class="icon-arrow-left"></span><a href="~/Home/Index" class="button" id="navbtn"> Home </a></button>
+                            <button><a href="~/Home/KinderElig" class="button" id="navbtn"> Check Eligibility </a> <span class="icon-arrow-right"></span></button>
+
+                        </div>
+                    </div>
+
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+                    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+                    <script type="text/javascript">
+                        var dom = document.getElementById("container");
+                        var myChart = echarts.init(dom);
+                        var app = {};
+                        option = null;
+
+                        setTimeout(function () {
+
+                            option = {
+                                legend: {},
+                                tooltip: {
+                                    trigger: 'axis',
+                                    showContent: true
+                                },
+                                dataset: {
+
+                                    source: [
+                                        ['product', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'],
+                                        ['Cities', 73.1, 79.4, 87.23, 94.33, 99.7, 85.1, 89.99, 93.77, 95.67, 98.77],
+                                        ['Rural Cities', 68.1, 74.4, 82.23, 89.33, 94.7, 81.1, 83.99, 88.77, 90.67, 93.77],
+                                        ['Boroughs', 62.1, 68.4, 76.23, 83.33, 88.7, 85.1, 78.99, 83.77, 85.67, 88.77],
+                                        ['Shires', 69.1, 75.4, 88.23, 94.33, 85.7, 95.1, 86.99, 91.77, 96.67, 99.77]
+                                    ]
+                                },
+                                xAxis: { type: 'category' },
+                                yAxis: { gridIndex: 0 },
+                                grid: { top: '55%' },
+                                series: [
+                                    { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                    { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                    { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                    { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                    {
+                                        type: 'pie',
+                                        id: 'pie',
+                                        radius: '30%',
+                                        center: ['50%', '25%'],
+                                        label: {
+                                            formatter: '{b}: {2008} ({d}%)'
+                                        },
+                                        encode: {
+                                            itemName: 'product',
+                                            value: '2008',
+                                            tooltip: '2008'
+                                        }
+                                    }
+                                ]
+                            };
+
+
+
+                            myChart.on('updateAxisPointer', function (event) {
+                                var xAxisInfo = event.axesInfo[0];
+                                if (xAxisInfo) {
+                                    var dimension = xAxisInfo.value + 1;
+                                    myChart.setOption({
+                                        series: {
+                                            id: 'pie',
+                                            label: {
+                                                formatter: '{b}: {[' + dimension + ']} ({d}%)'
+                                            },
+                                            encode: {
+                                                value: dimension,
+                                                tooltip: dimension
+                                            }
+                                        }
+                                    });
+                                }
+                            });
+
+                            myChart.setOption(option);
+
+                        });;
+                        if (option && typeof option === "object") {
+                            myChart.setOption(option, true);
+                        }
+                    </script>
+
+
+                </div>
+
+
+
+
+            </div>
+
+     
+
+
+
+
+
+
+
+
+    </section>
+
+  
+
+
+</body>
+</html>

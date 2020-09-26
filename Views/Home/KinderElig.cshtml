@@ -11,19 +11,23 @@
     <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
     <link href="~/Content/css/navbtn.css" rel="stylesheet" />
 </head>
+
 <body id="nav121">
+    
     <section class="site-section" id="kinder-education">
-        <div class="row align-items-center justify-content-center" style="height:200px; margin-top:100px">
-            <div class=" site-blocks-cover text-black-50  mt-lg-5 text-center">
-                <h1>Kindergarten Eligibility</h1>
-                <!-- <p class="post-meta">April 17, 2019 &bull; Posted by <a href="#">Admin</a> in <a href="#">Events</a></p>-->
-            </div>
-        </div>
+        
+        
         <div class="container">
+            <div class="row justify-content-center" style="margin-top:100px">
+                <div class="col-lg-6 text-center heading-section mb-5">
+                    <h2 class="text-black mb-2">Kindergarten Eligibility</h2>
+
+                </div>
+            </div>
 
             <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-lg-6 text-center heading-section mb-5">
-                    <h2 class="text-black mb-2">When children attend kindergarten?</h2>
+                    <h3 class="text-black mb-2">When children attend kindergarten?</h3>
                     <p>
                         There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                     </p>
@@ -134,7 +138,7 @@
                                         It is of vital importance to support your child from his early years of development.
                                     </p>
                                     <p>
-                                        EarLy Childhood Intervention Services (ECIS)<br />
+                                        Early Childhood Intervention Services (ECIS)<br />
                                         ECIS aims to provide the best possible specialist support for children who are disabled or undergo developmental delay.
                                         They work closely with parents and families to upskill them for the development of their child.
                                     </p>
@@ -177,49 +181,15 @@
                 </div>
 
 
-                <div class="container max-width-adaptive-sm">
-                    <div class="text-component line-height-lg v-space-md">
-                        <div class="text-center heading-section">
-                            <h2 class="text-black">Inclusion Support at Kindergarten </h2>
-                        </div>
-                        <div class="text-component padding-md text-black">
-                            <p>
-                                Kindergarten Inclusion Support Programs provide  extra support to Kindergartens. In this way Kindergartens have access to all the services  that may be needed to support your child with additional needs.
 
-                                Once you discover that your child needs extra support due to disability, developmental delays, medical needs - iisrt step is to Inform the Kindergarten staff.
-                                Staff will immediately setup a  program support group that will help your family and kindergarten staff navigate a smooth way for inclusion of your child.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
                 <div class="text-center heading-section">
                     <h2 class="text-black">Explore more ?</h2>
                 </div>
 
-                <div class="component">
-                    <!-- Start Nav Structure -->
-                    <button class="csstransforms cn-button" id="cn-button">+</button>
-                    <div class="csstransforms cn-wrapper" id="cn-wrapper">
-                        <ul>
-                            <!--<li><a href="#"><span class="icon-arrow-up"></span></a></li>-->
-                            <li><a><span class="icon-arrow-up">@Html.ActionLink(" ", "Index", "Home", new object { }, new { @class = "icon-arrow-up" })</span></a></li>
-                            <li><a>now<br />2/3</a></li>
-                            <li><a href="#"><span class="icon-home">@Html.ActionLink(" ", "Index", "Home", new { @class = "icon-home" })</span></a></li>
-                            <li><a>next<br />3/3</a></li>
-                            <li><a href="#"><span class="icon-arrow-up">@Html.ActionLink(" ", "Index", "Kindergartens", new object { }, new { @class = "icon-arrow-up" })</span></a></li>
-
-                        </ul>
-                    </div>
-                    <div id="cn-overlay" class="cn-overlay"></div>
-                    <!-- End Nav Structure -->
-
-                </div><!-- /container -->
-
-                <div style="margin-top:10px" >
+                <div style="margin-top:10px">
                     <div class="multi-button">
-                        <button><span class="icon-arrow-left"></span> @Html.ActionLink("Current Trends", "Index", "Home", new { @class = "button", @id = "navbtn" })</button>
-                        <button>@Html.ActionLink("Find Kindergartens", "Index", "Kindergartens", new object { }, new { @class = "button", @id = "navbtn" }) <span class="icon-arrow-right"></span></button>
+                        <button><span class="icon-arrow-left"></span> @Html.ActionLink("Current Trends", "VisualG", "Home", new { @class = "button", @id = "navbtn" })</button>
+                        <button><a href="~/kinderInfoSets/Index" class="button" id="navbtn">Search Kindergarten</a> <span class="icon-arrow-right"></span></button>
 
                     </div>
                 </div>
@@ -233,15 +203,11 @@
 
         </div>
     </section>
+
     <script>
-        $("#naviii11").hide();
+        $("#img001").hide();
     </script>
-    <script>
-        $("#header001").hide();
-    </script>
-    <script src="~/Scripts/js/kinderElig.js"></script>
-    <script src="~/Scripts/js/demo1.js"></script>
-    <script src="~/Scripts/js/polyfills.js"></script>
+
 </body>
 </html>
 

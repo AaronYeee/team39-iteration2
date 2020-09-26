@@ -57,36 +57,55 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="#home-section" class="h2 mb-0"><img src="~/Content/images/cai12.png" style="max-width:80%" /><span class="text-primary">.</span> </a></h1>
+                    <div class="col-6 col-xl-2" id="img001">
+                        <h1 class="mb-0 site-logo"><a href="~/Home/#home-section" class="h2 mb-0"><img src="~/Content/images/cai12.png" style="max-width:80%"  /><span class="text-primary">.</span> </a></h1>
                     </div>
 
                     <div class="col-12 col-md-10 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right" role="navigation" id="naviii11">
 
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a class="nav-link">@Html.ActionLink("Home Page", "Index", "Home", new { @class = "nav-link" })</a></li>
-                                <li><a href="#kinder-education" class="nav-link">Kindergarten Education</a></li>
+                                <li><a class="nav-link" href="~/Home/#home-nav">Home Page</a></li>
+                                <li><a href="~/Home/#about-section" class="nav-link">Our Philosophy</a></li>
                                 <li class="has-children">
-                                    <a href="#about-section" class="nav-link">About</a>
+                                    <a href="~/Home/#kinder-education" class="nav-link">Kindergarten In Australia</a>
                                     <ul class="dropdown">
-                                        <li><a href="#about-section" class="nav-link">About Us</a></li>
-                                        <li><a href="#current-trend" class="nav-link">Current Trends</a></li>
-                                        <li><a href="#Eligibility" class="nav-link">Eligibility</a></li>
-                                        <li><a href="#kg-location" class="nav-link">Locate a Kindergarten</a></li>
-                                        <!--<li><a href="#gallery-section" class="nav-link">Gallery</a></li>
-                                        <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                                        <li><a href="~/Home/#kinder-education" class="nav-link">Why kindergarten?</a></li>
                                         <li class="has-children">
-                                            <a href="#">More Links</a>
+                                            <a href="~/Home/#Diff">Educational Differences</a>
                                             <ul class="dropdown">
-                                                <li><a href="#">Menu One</a></li>
-                                                <li><a href="#">Menu Two</a></li>
-                                                <li><a href="#">Menu Three</a></li>
+                                                <li><a href="~/Home/Differences">England</a></li>
+                                                <li><a href="~/Home/Differences">China</a></li>
+                                                <li><a href="~/Home/Differences">India</a></li>
+                                                <li><a href="~/Home/Differences">Europe</a></li>
+                                                <li><a href="~/Home/Differences">South Africa</a></li>
+                                                <li><a href="~/Home/Differences">Other Countries</a></li>
                                             </ul>
-                                        </li>-->
+                                        </li>
+
+                                        <li><a href="~/Home/#advan" class="nav-link">Advantages</a></li>
+                                        <li><a href="~/Home/#HSW1" class="nav-link">Health, Safety & Wellbeing</a></li>
+                                        <li><a href="~/Home/#Fsupport1" class="nav-link">Financial Support</a></li>
+                                        
+                                        
+
+
+
                                     </ul>
                                 </li>
-                                <li><a href="#question-section" class="nav-link">Frequently Ask Questions</a></li>
+
+                                <li class="has-children">
+                                    <a href="#" class="nav-link">Get Ready</a>
+                                    <ul class="dropdown">
+                                        <li><a href="~/Home/#current-trend" class="nav-link">Current Trends</a></li>
+                                        <li><a href="~/Home/#Eligibility" class="nav-link">Eligibility</a></li>
+                                        <li><a href="~/Home/#kg-location" class="nav-link">Locate a Kindergarten</a></li>
+                                        <li><a href="~/Home/#Csubsidy" class="nav-link">Child Care Subsidy</a></li>
+                                        <li><a href="~/Home/#Kenrollment" class="nav-link">Enrollment</a></li>
+                                     
+                                    </ul>
+                                </li>
+                                <li><a href="~/Home/#question-section" class="nav-link">Frequently Ask Questions</a></li>
 
                             </ul>
                         </nav>
@@ -222,6 +241,9 @@
             });
         });
     </script>
+
+
+
 
 
 
