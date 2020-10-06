@@ -15,15 +15,33 @@ namespace v2.Controllers
         private Model1 db = new Model1();
 
         // GET: kinderInfoSets
-        public ActionResult Index()
+        public ActionResult Index(string input_area)
         {
-            var a = "MELBOURNE";
-            var kindergartens = db.kinderInfoSets.Where(r => ((r.Suburb).Contains(a)) == true);
-            return View(kindergartens.ToList());
+
+
+         
+
+
+            if (input_area == null)
+            {
+                var a = "MELBOURNE";
+                var kindergartens = db.kinderInfoSets.Where(r => ((r.Suburb).Contains(a)) == true);
+                return View(kindergartens.ToList());
+            }
+            else
+            {
+                var b = input_area;
+                var kindergartens1 = db.kinderInfoSets.Where(r => (((r.Suburb).Replace(" ", "")).Contains(b.Replace(" ", "")) || (r.PostCode).Contains(b)) == true);
+                return View(kindergartens1.ToList());
+            }
+
+
         }
 
+      
 
-        
+
+
 
 
         public ActionResult Update_table(string input_area)

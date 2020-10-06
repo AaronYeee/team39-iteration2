@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="~/Content/css/jquery-ui.css">
     <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+    <link href="~/Content/css/returnTop.css" rel="stylesheet" />
+
 
     <link rel="stylesheet" href="~/Content/css/jquery.fancybox.min.css">
 
@@ -27,7 +28,7 @@
     <link href="~/Content/css/quickNavigation.css" rel="stylesheet" />
 
     <title>@ViewBag.Title - Ready for kinder</title>
-   
+
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
@@ -52,13 +53,13 @@
         </div>
 
 
-        <header id="header001"class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <header id="header001" class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
             <div class="container">
                 <div class="row align-items-center">
 
                     <div class="col-6 col-xl-2" id="img001">
-                        <h1 class="mb-0 site-logo"><a href="~/Home/#home-section" class="h2 mb-0"><img src="~/Content/images/cai12.png" style="max-width:80%"  /><span class="text-primary">.</span> </a></h1>
+                        <h1 class="mb-0 site-logo"><a href="~/Home/#home-section" class="h2 mb-0"><img src="~/Content/images/cai12.png" style="max-width:80%" /><span class="text-primary">.</span> </a></h1>
                     </div>
 
                     <div class="col-12 col-md-10 d-none d-xl-block">
@@ -68,44 +69,32 @@
                                 <li><a class="nav-link" href="~/Home/#home-nav">Home Page</a></li>
                                 <li><a href="~/Home/#about-section" class="nav-link">Our Philosophy</a></li>
                                 <li class="has-children">
-                                    <a href="~/Home/#kinder-education" class="nav-link">Kindergarten In Australia</a>
+                                    <a href="~/Home/WhyKinder" class="nav-link">Why kindergarten?</a>
                                     <ul class="dropdown">
-                                        <li><a href="~/Home/#kinder-education" class="nav-link">Why kindergarten?</a></li>
-                                        <li class="has-children">
-                                            <a href="~/Home/#Diff">Educational Differences</a>
-                                            <ul class="dropdown">
-                                                <li><a href="~/Home/Differences">England</a></li>
-                                                <li><a href="~/Home/Differences">China</a></li>
-                                                <li><a href="~/Home/Differences">India</a></li>
-                                                <li><a href="~/Home/Differences">Europe</a></li>
-                                                <li><a href="~/Home/Differences">South Africa</a></li>
-                                                <li><a href="~/Home/Differences">Other Countries</a></li>
-                                            </ul>
+                                        <li><a href="~/Home/AboutKG" class="nav-link">Skills development</a></li>
+                                        <li>
+                                            <a href="~/Home/Differences">Educational Differences</a>
                                         </li>
 
-                                        <li><a href="~/Home/#advan" class="nav-link">Advantages</a></li>
-                                        <li><a href="~/Home/#HSW1" class="nav-link">Health, Safety & Wellbeing</a></li>
-                                        <li><a href="~/Home/#Fsupport1" class="nav-link">Financial Support</a></li>
-                                        
-                                        
-
-
-
+                                        <li><a href="~/Home/LinKG" class="nav-link">Benefits</a></li>
+                                        <li><a href="~/Home/HSWpage" class="nav-link">Health, Safety & Wellbeing</a></li>
+                                        <li><a href="~/Home/VisualG" class="nav-link">Current Trends</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="has-children">
-                                    <a href="#" class="nav-link">Get Ready</a>
+                                    <a href="~/Home/ReadyKinder" class="nav-link">Get Ready</a>
                                     <ul class="dropdown">
-                                        <li><a href="~/Home/#current-trend" class="nav-link">Current Trends</a></li>
-                                        <li><a href="~/Home/#Eligibility" class="nav-link">Eligibility</a></li>
-                                        <li><a href="~/Home/#kg-location" class="nav-link">Locate a Kindergarten</a></li>
-                                        <li><a href="~/Home/#Csubsidy" class="nav-link">Child Care Subsidy</a></li>
-                                        <li><a href="~/Home/#Kenrollment" class="nav-link">Enrollment</a></li>
-                                     
+
+                                        <li><a href="~/Home/kinderElig" class="nav-link">Eligibility</a></li>
+                                        <li><a href="~/kinderInfoSets/Index" class="nav-link">Find Kindergarten</a></li>
+                                        <li><a href="~/Home/EnrollmentMore" class="nav-link">Enrolment</a></li>
+
+
                                     </ul>
                                 </li>
-                                <li><a href="~/Home/#question-section" class="nav-link">Frequently Ask Questions</a></li>
+                                <li><a href="~/Home/FinancialSupport" class="nav-link">Financial Support</a></li>
+                                <li><a href="~/Home/#question-section" class="nav-link">FAQ</a></li>
 
                             </ul>
                         </nav>
@@ -117,7 +106,7 @@
                 </div>
             </div>
 
-             
+
 
         </header>
 
@@ -241,7 +230,7 @@
             });
         });
     </script>
-
+    <script src="~/Scripts/js/ReturnTop.js"></script>
 
 
 

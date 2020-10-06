@@ -1,0 +1,188 @@
+﻿
+
+.container#cSideBar {
+    width: 100px;
+    background: #a2c0be;
+    margin: 40px auto;
+    padding: 10px 0px 20px 0px;
+    border: 1px solid #a2c0be;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 300px;
+    left: 30px;
+}
+
+.container#cSideBar1 {
+    width: 100px;
+    background: #a2c0be;
+    margin: 40px auto;
+    padding: 10px 0px 20px 0px;
+    border: 1px solid #a2c0be;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 300px;
+    
+}
+
+.link#cSideBar {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+
+    .link#cSideBar:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        bottom: 50%;
+        left: -100%;
+        transition-delay: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    a#cSideBar:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        bottom: 50%;
+        left: -100%;
+        transition-delay: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .link#cSideBar:hover:after,
+    .link#cSideBar.hover:after {
+        left: 100%;
+    }
+
+    .link#cSideBar .text {
+        text-shadow: 0px -40px 0px rgba(255, 255, 255, 1);
+        transition: all 0.75s;
+        transform: translateY(100%) translateZ(0);
+        transition-delay: 0.25s;
+    }
+
+    .link#cSideBar:hover .text,
+    .link#cSideBar.hover .text {
+        text-shadow: 0px -40px 0px rgba(255, 255, 255, 0);
+        transform: translateY(0%) translateZ(0) scale(1.1);
+        font-weight: 600;
+    }
+
+a#cSideBar{
+    color:#FFF;
+
+}
+    a#cSideBar:hover,
+    a#cSideBar.hover{
+        text-shadow: 0px -40px 0px rgba(255, 255, 255, 0);
+        transform: translateY(0%) translateZ(0) scale(1.1);
+        font-weight: 600;
+    }
+
+a#cSideBar:hover:after,
+a#cSideBar.hover:after {
+    left: 100%;
+}
+
+
+.main12 {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+ul.breadcrumb {
+    margin-left: 50px;
+    display: inline-block;
+    list-style: none;
+    background-color:#FFF;
+}
+
+    ul.breadcrumb li {
+        float: right;
+        padding: 5px;
+        background-color: #fff;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: -50px;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        margin-top: 3px;
+    }
+
+        ul.breadcrumb li a {
+            overflow: hidden;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            text-decoration: none;
+            height: 50px;
+            color: #f2f2f2;
+            background-color: #a2c0be;
+            text-align: center;
+            min-width: 50px;
+            display: block;
+            line-height: 50px;
+            padding-left: 52px;
+            padding-right: 33.33333px;
+            width: 50px;
+        }
+
+            ul.breadcrumb li a .icon {
+                display: inline-block;
+            }
+
+            ul.breadcrumb li a .text {
+                display: none;
+                opacity: 0;
+                color:#FFF;
+            }
+
+            ul.breadcrumb li a:hover {
+                width: 250px;
+                background-color: #b1cac9;
+            }
+
+                ul.breadcrumb li a:hover .text {
+                    display: inline-block;
+                    opacity: 1;
+                }
+
+        ul.breadcrumb li:last-child a {
+            padding: 0;
+        }
+
+        ul.breadcrumb li:last-child:hover {
+            padding: 3px;
+            margin-top: 0;
+        }
+
+            ul.breadcrumb li:last-child:hover a {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }

@@ -92,6 +92,13 @@ map.on('load', function (e) {
         type: 'geojson',
         data: stores
     });
+    var geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken, // Set the access token
+        mapboxgl: mapboxgl, // Set the mapbox-gl instance
+        marker: true, // Use the geocoder's default marker style
+       
+    });
+    map.addControl(geocoder, 'top-left');
     addMarkers();
     buildLocationList(stores);
 

@@ -11,33 +11,30 @@
     <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
     <link href="~/Content/css/navbtn.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="~/Content/css/coolSideBar.css" rel="stylesheet" />
+    <link href="~/Content/css/Myfont.css" rel="stylesheet" />
 </head>
 <body id="nav121">
 
-    <div style="height:200px"></div>
-
+    <div style="height:100px"></div>
+    <a href="javascript:" id="return-to-top"><span class="icon-arrow-up"></span></a>
 
     <!--mainBody-->
     <!--4blocks-->
-    <section class="site-section" id="kinder-education">
-        <div class="container">
+    <section class="site-section example-post" id="kinder-education">
+        <div class="container entry-content">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center heading-section mb-5">
-                    <h2 class="text-black mb-2"> Australian Early Childhood Education </h2>
+                    <h2 class="darkBlue mb-2"> Australian Early Childhood Education </h2>
                     <p>
                         Wondering the difference between Australian early childhood education and other countries?
 
                     </p>
-
-
-
-
-
-
                 </div>
-                
+
+
                 <div style="margin:auto">
-                    <p>Choose a country to see the differences!</p>
+                    <p>Choose a country to see the differences</p>
                     <div class="btn-group" role="group" aria-label="Basic example" style="margin:auto">
                         <div class="btn btn-primary" id="controlEng">England</div>
                         <div class="btn btn-primary" id="controlCH">China</div>
@@ -45,9 +42,32 @@
                         <div class="btn btn-primary" id="controlEur">Europe</div>
                         <div class="btn btn-primary" id="controlSA1">South Africa</div>
                         <div class="btn btn-primary" id="controlOther">Other</div>
-                        <div class="btn btn-primary" id="controlAll">All</div>
+
                     </div>
                 </div>
+            </div>
+            <div>
+                <ul class="breadcrumb">
+
+                    <li>
+                        <a href="~/Home/Differences">
+                            <span class="icon icon-beaker"></span>
+                            <span class="text">Differences</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="~/Home/WhyKinder">
+                            <span class="icon icon-beaker"></span>
+                            <span class="text">Why Kinder</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~//Home/Index">
+                            <span class="icon icon-home"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
 
@@ -56,13 +76,13 @@
 
             <div class="row hover-1-wrap mb-5 mb-lg-0" id="eng1" style="margin-top:50px">
                 <div style="margin:auto" id="england">
-                    <h2 class="text-black mb-2 "> Australia vs England </h2>
+                    <h2 class=" mb-2 green" style=" font-weight: bold"> Australia vs England </h2>
                 </div>
                 <div class="col-12" style="margin-top:30px ;margin-bottom:80px">
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2">
                             <h2 class="text-black text-center">England</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 In England, the Early Years Foundation Stage (EYFS) caters for children from birth to age five. This phase of education is not compulsory.<br\>
                                     <br\>
@@ -71,14 +91,14 @@
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Publicly funded early years education for 3- and 4-year-olds is provided in nursery schools and nursery classes in maintained primary schools and academies.
                                 In addition, places are available in children’s centres (sometimes known as Sure Start children’s centres) and in private and voluntary settings,
                                 such as day nurseries, playgroups and registered childminders, which are supported by government funding subject to meeting certain requirements.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Fees:</Strong></p>
                             <p>
                                 All 3- and 4-year-olds are entitled to 570 hours of free provision per year, typically taken as 15 hours per week over 38 weeks of the year;
                                 this is known as the ‘universal entitlement’. In addition, since September 2017, 3- and 4-year-olds with working parents are entitled to a free nursery place equivalent to 30 hours per week over 38 weeks of the year.
@@ -90,14 +110,14 @@
                         </div>
                         <div class="col-lg-5 mr-auto  align-self-center order-lg-1">
                             <h2 class="text-black text-center">Australia</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -116,18 +136,19 @@
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                                
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
 
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                            <p class="text-black">
+                                <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-
-                            <p>What is  Kindergarten fees subsidy?</p>
+                            <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
                         </div>
@@ -137,19 +158,19 @@
 
             <div class="row hover-1-wrap mb-5 mb-lg-0" id="china1" style="margin-top:50px">
                 <div style="margin:auto">
-                    <h2 class="text-black mb-2 "> Australia vs China </h2>
+                    <h2 class=" mb-2 green" style=" font-weight: bold"> Australia vs China </h2>
                 </div>
                 <div class="col-12" style="margin-top:30px;margin-bottom:80px">
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2">
                             <h2 class="text-black text-center">China</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 All 0- and 6-year-olds
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Three Types of Early Childhood Programs:
                             </p>
@@ -173,7 +194,7 @@
                                 A part of the elementary school. It is typically a half-day program serving children the year prior to 1st grade.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Fees:</Strong></p>
                             <p>
                                 From 400 to 1000RMB in different areas.
                             </p>
@@ -183,14 +204,14 @@
                         </div>
                         <div class="col-lg-5 mr-auto  align-self-center order-lg-1">
                             <h2 class="text-black text-center">Australia</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -209,17 +230,19 @@
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                               
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
 
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                            <p class="text-black">
+                                <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-                            <p>What is  Kindergarten fees subsidy?</p>
+                            <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
                         </div>
@@ -229,20 +252,20 @@
 
             <div class="row hover-1-wrap" id="india1" style="margin-top:50px">
                 <div style="margin:auto">
-                    <h2 class="text-black mb-2 "> Australia vs India </h2>
+                    <h2 class=" mb-2 green" style=" font-weight: bold"> Australia vs India </h2>
                 </div>
                 <div class="col-12" style="margin-top:30px ;margin-bottom:80px">
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2">
                             <h2 class="text-black text-center">India</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are 2 types of kinder in India. Lower Kindergarten (4 year old kinder) and Upper
                                 kindergarten (5 Year Kinder)
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Primary schools provide kindergarten services and usually children are required to attend
                                 kinder in order to attend year one (First class)
@@ -265,7 +288,7 @@
 
 
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Fees:</Strong></p>
                             <p>
                                 Varies from 3000 INR monthly to 20000 INR depending upon type and funding. Govt funded
                                 are usually economical.
@@ -276,14 +299,14 @@
                         </div>
                         <div class="col-lg-5 mr-auto  align-self-center order-lg-1">
                             <h2 class="text-black text-center">Australia</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -302,17 +325,19 @@
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                                
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
 
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                            <p class="text-black">
+                                <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-                            <p>What is  Kindergarten fees subsidy?</p>
+                            <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
                         </div>
@@ -323,13 +348,13 @@
             <div class="row hover-1-wrap mb-5 mb-lg-0" id="EurInfo1" style="margin-top:50px">
                 <div style="margin:auto">
 
-                    <h2 class="text-black mb-2 "> Australia vs Europe </h2>
+                    <h2 class=" mb-2 green" style=" font-weight: bold"> Australia vs Europe </h2>
                 </div>
                 <div class="col-12" style="margin-top:30px; margin-bottom:80px">
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2">
                             <h2 class="text-black text-center">Europe</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 All 3- and 4-year-olds
                                 In most of Europe, children begin compulsory schooling when they are six years old.
@@ -337,7 +362,7 @@
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Early childhood education and care:
 
@@ -354,7 +379,7 @@
 
 
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Fees:</Strong></p>
                             <p>
                                 Average monthly fees are the highest in Ireland, the Netherlands, the UK and Switzerland. In Ireland, average monthly fees reach €771,
                                 Switzerland had the highest fees, at around €2,150 a month, while England ranked second at just under €1,190, while Ireland is in third place with €771 and the Netherlands is fourth, with average monthly fees of €572. Fees were lowest in the Baltic and Balkan countries, as well as Romania and Sweden. In Bulgaria, parents pay just €18 a month.
@@ -366,14 +391,14 @@
                         </div>
                         <div class="col-lg-5 mr-auto  align-self-center order-lg-1">
                             <h2 class="text-black text-center">Australia</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -392,17 +417,19 @@
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                                
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
 
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                            <p class="text-black">
+                                <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-                            <p>What is  Kindergarten fees subsidy?</p>
+                            <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
                         </div>
@@ -415,13 +442,13 @@
             <div class="row hover-1-wrap mb-5 mb-lg-0" id="SAfrica1" style="margin-top:50px">
                 <div style="margin:auto">
 
-                    <h2 class="text-black mb-2 "> Australia vs South Africa </h2>
+                    <h2 class=" mb-2 green" style=" font-weight: bold"> Australia vs South Africa </h2>
                 </div>
                 <div class="col-12" style="margin-top:30px; margin-bottom:80px">
                     <div class="row">
                         <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2">
                             <h2 class="text-black text-center">South Africa</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 Pre-primary education.
                                 It refers to pre-Grade 1 education directed at learners that are 0 to 6 years old.<br /><br />
@@ -431,7 +458,7 @@
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 pre-schools and childcare centers.
 
@@ -453,13 +480,13 @@
 
 
 
-                            <p class="mb-4 text-black">Fees&Terms:</p>
+                            <p class="mb-4 text-black"><Strong>Fees&Terms:</Strong></p>
                             <p>
-                                The school year in South Africa starts in January. Parents must enroll children between 1 August and 31 October the preceding year.
-                                Grade R applicants must be four years old and turn five by the 30 June of the school year. 
+                                The school year in South Africa starts in January. Parents must enrol children between 1 August and 31 October the preceding year.
+                                Grade R applicants must be four years old and turn five by the 30 June of the school year.
                                 Grade one applicants must be five and turn six by 30 June.
                                 School fees vary depending on the area you live and the standard of education offered. On average, expats can expect to pay between R1000 and R2300 a month for nurseries plus any additional fees such as mattress fees, hygiene, security, and supplies. Such levies can add an extra R2,000-R3,000 a year. You should also budget around R2,500-R8,000 for the registration process.
-v
+                                v
                             </p>
 
 
@@ -467,14 +494,14 @@ v
                         </div>
                         <div class="col-lg-5 mr-auto  align-self-center order-lg-1">
                             <h2 class="text-black text-center">Australia</h2>
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -493,17 +520,17 @@ v
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                               
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
-
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                             <p class="text-black">  <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-                            <p>What is  Kindergarten fees subsidy?</p>
+                             <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
                         </div>
@@ -527,14 +554,14 @@ v
 
                             </p>
 
-                            <p class="mb-4 text-black">Starting age:</p>
+                            <p class="mb-4 text-black"><strong>Starting age:</strong></p>
                             <p>
                                 There are two types of Kindergarten programs for 3 year old or 4 year old kids.
                                 Early childhood education in Australia is not compulsory and is delivered to children through a range of settings.
                             </p>
 
 
-                            <p class="mb-4 text-black">Providers:</p>
+                            <p class="mb-4 text-black"><Strong>Providers:</Strong></p>
                             <p>
                                 Childcare centres and pre-schools (also referred to as kindergartens in some parts of Australia) in the year before full-time schooling.<br /><br />
 
@@ -553,17 +580,18 @@ v
                                 Ask your service about their Preschool/Kindergarten program.
                             </p>
 
-                            <p class="mb-4 text-black">Fees:</p>
+                            <p class="mb-4 text-black"><Strong>Kindergarten term & fees:</Strong></p>
                             <p>
-                                Kindergarten term & fees:<br />
+                                
                                 In 2020, it will cost $455 per term for a child to attend one of our kindergartens.
                                 A child can attend up to 15 hours of kindergarten per week. There are 4 termsin the kindergarten year.<br /><br />
-
-                                Kindergarten fees subsidy:<br />
+                            </p>
+                            <p class="text-black">
+                                <Strong> Kindergarten fees subsidy:<br /></Strong>
 
                                 The kindergarten fee subsidy allows children to access up to 15 hours of funded kindergarten delivered by a qualified early childhood teacher for free or at low cost.
                             </p>
-                            <p>What is  Kindergarten fees subsidy?</p>
+                            <p class="text-black"> <Strong>What is  Kindergarten fees subsidy?</Strong></p>
                             <p><a href="~/Home/CSUBSIDY" class="btn btn-primary">Click me</a></p>
 
 
@@ -573,7 +601,7 @@ v
 
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -588,11 +616,11 @@ v
 
 
         <!-- /container -->
-        <div style="margin-top:20px" >
+        <div style="margin-top:20px">
             <div class="multi-button">
                 <button><span class="icon-arrow-left"></span> <a href="~/Home/AboutKG" class="button" id="navbtn"> Why kindergarten? </a></button>
-                
-                <button><a href="~/Home/LinKG" class="button" id="navbtn"> Advantages in Kindergartens </a> <span class="icon-arrow-right"></span></button>
+
+                <button><a href="~/Home/LinKG" class="button" id="navbtn"> Kindergartens Benefits  </a> <span class="icon-arrow-right"></span></button>
 
             </div>
         </div>
@@ -610,7 +638,7 @@ v
     <script>
 
         $(document).ready(function () {
-            
+
 
 
 
@@ -621,9 +649,9 @@ v
                 $('#EurInfo1').hide();
                 $('#otherInfo1').hide();
                 $('#SAfrica1').hide();
-                
 
-                  
+
+
 
             });
 
@@ -658,7 +686,7 @@ v
                 $('#india1').show();
                 $('#EurInfo1').hide();
                 $('#otherInfo1').hide();
-        
+
 
 
 
@@ -699,9 +727,9 @@ v
                 $('#otherInfo1').show();
             });
 
-            });
-        
-</script>
+        });
+
+    </script>
 
 
 

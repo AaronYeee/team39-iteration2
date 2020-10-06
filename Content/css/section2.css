@@ -1,0 +1,336 @@
+﻿
+
+.video-area {
+    position: relative;
+    height: 700px;
+    background-color: #FDECD2;
+    width:100%
+}
+
+.section-bg2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+
+
+
+.container#section22 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 575px) {
+    .video-area {
+        height: 1500px
+    }
+}
+
+.video-area .video-contents {
+    position: relative;
+    padding: 100px 0 30px 100px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .video-area .video-contents {
+        padding: 100px 0 30px 50px
+    }
+}
+
+@media (max-width: 575px) {
+    .video-area .video-contents {
+        padding: 71px 0 30px 39px
+    }
+}
+
+.video-area .video-contents::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+    ul.timeline:before {
+        content: ' ';
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+
+    ul.timeline > li {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+
+        ul.timeline > li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+
+ p.tittle-pera1 {
+    font-size: 19px;
+    color: #071112;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.section-tittle h2 {
+    font-size: 48px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #071112;
+}
+
+
+.visit-tailor-area {
+    background: #ffff;
+    display: flex;
+    align-items: center;
+}
+
+.tailor-offers {
+
+    
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 595px;
+    width: 48%;
+}
+
+.visit-tailor-area {
+    background: #ffff;
+    display: flex;
+    align-items: center
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visit-tailor-area {
+        display: block
+    }
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area {
+        display: block
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area {
+        display: block
+    }
+}
+
+.visit-tailor-area .tailor-details {
+    width: 32%;
+    padding: 20px 20px 20px 120px
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visit-tailor-area .tailor-details {
+        width: 53%;
+        padding: 47px 20px 0px 50px
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .visit-tailor-area .tailor-details {
+        width: 41%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visit-tailor-area .tailor-details {
+        width: 84%;
+        padding: 50px 50px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area .tailor-details {
+        width: 90%;
+        padding: 51px 50px 20px 50px
+    }
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-details {
+        width: 100%;
+        padding: 51px 20px 20px 20px
+    }
+}
+
+.visit-tailor-area .tailor-details span {
+    margin-bottom: 20px;
+    display: block;
+    color: #70D76A;
+    text-transform: uppercase;
+    font-size: 20px
+}
+
+.visit-tailor-area .tailor-details h2 {
+    font-size: 55px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 40px
+}
+
+.overlapSection {
+    margin-top: -30px;
+}
+
+.pb-padding {
+    padding-bottom: 110px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .visit-tailor-area .tailor-details h2 {
+        font-size: 35px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visit-tailor-area .tailor-details h2 {
+        font-size: 35px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area .tailor-details h2 {
+        font-size: 50px
+    }
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-details h2 {
+        font-size: 27px
+    }
+}
+
+.visit-tailor-area .tailor-details p {
+    font-size: 19px;
+    color: #071112;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-details p {
+        font-size: 15px
+    }
+}
+
+.visit-tailor-area .tailor-details p.pera-bottom {
+    margin-bottom: 41px;
+    font-size: 16px
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-details p.pera-bottom {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area .tailor-details p.pera-bottom {
+        font-size: 13px
+    }
+}
+
+.visit-tailor-area .tailor-details .footer-tittles h2 {
+    font-size: 57px;
+    font-weight: 400;
+    font-size: 45px
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area .tailor-details .footer-tittles h2 {
+        font-size: 13px
+    }
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-details .footer-tittles h2 {
+        font-size: 31px
+    }
+}
+
+.visit-tailor-area .tailor-details .footer-tittles p {
+    padding-bottom: 22px;
+    color: #1D2547;
+    font-size: 16px
+}
+
+.visit-tailor-area .tailor-offers {
+    background-image: url(../img/gallery/visit_bg.png);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 595px;
+    width: 48%
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visit-tailor-area .tailor-offers {
+        height: 569px;
+        width: 61%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visit-tailor-area .tailor-offers {
+        width: 100%;
+        height: 420px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visit-tailor-area .tailor-offers {
+        width: 100%;
+        height: 320px
+    }
+}
+
+@media (max-width: 575px) {
+    .visit-tailor-area .tailor-offers {
+        width: 100%;
+        height: 250px
+    }
+}
+
+

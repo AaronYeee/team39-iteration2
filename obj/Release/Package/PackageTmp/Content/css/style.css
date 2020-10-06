@@ -23,6 +23,13 @@ a {
   a:hover {
     text-decoration: none; }
 
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
@@ -1781,9 +1788,9 @@ figure figcaption {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* New For Dogger */
+
 .heading-section h2 {
-  text-transform: uppercase;
+ 
   font-weight: 900; }
 
 .hover-1-wrap .hover-1 {
@@ -2089,6 +2096,10 @@ figure figcaption {
     }
 
 
+
+
+
+
 @keyframes bounce {
     0%, 100%, 20%, 50%, 80% {
         -webkit-transform: translateY(0);
@@ -2108,3 +2119,4 @@ figure figcaption {
         transform: translateY(-5px);
     }
 }
+

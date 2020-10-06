@@ -25,27 +25,60 @@
     @*This is used for the Geocoding Mapbox API*@
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-glgeocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-glgeocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' />
-
+    <link href="~/Content/css/Myfont.css" rel="stylesheet" />
     <link href="~/Content/css/map.css" rel="stylesheet" />
+    <link href="~/Content/css/coolSideBar.css" rel="stylesheet" />
 </head>
 <body>
-    <div style="height:150px"></div>
-    <div class="row justify-content-center">
-        <div class="col-lg-10 heading-section mb-5">
-            <h2 class="text-black text-center mb-2" data-aos="fade-right">Find Kindergarten</h2>
-        </div>
-    </div>
+    <div style="height:80px"></div>
+    <a href="javascript:" id="return-to-top"><span class="icon-arrow-up"></span></a>
 
     <section class="site-section" data-aos="fade">
         <div class="container">
+
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-6 text-center heading-section mb-5">
+                    <h2 class="mb-2 darkBlue">Find Kindergarten</h2>
+                    <p class="text-center" style="font-weight:bold; color:#f7acb4">
+                        It is important for your child to attend a kindergarten that is near to your workplace or your home
+                    </p>
+                </div>
+
+
+            </div>
+
+
             <div class="row align-items-center justify-content-center">
                 <div class="col-12">
+                    <div>
+                        <ul class="breadcrumb">
+
+                            <li>
+                                <a href="~/kinderInfoSets/Index">
+                                    <span class="icon icon-beaker"></span>
+                                    <span class="text">Find Kindergarten</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="~/Home/ReadyKinder">
+                                    <span class="icon icon-beaker"></span>
+                                    <span class="text">Get Ready</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~//Home/Index">
+                                    <span class="icon icon-home"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="row">
 
                         <div class="mb-4 mb-lg-0 col-lg-4 order-lg-2" data-aos="fade-right">
                             <form action="Update_table" method="post">
                                 <input id="area_input" name="input_area" type="text" placeholder="Enter suburb or post code" style=" background-color: #fff; font-family: Roboto; font-size: 15px; font-weight: 300; margin-left: 12px; padding: 0 11px 0 13px; text-overflow: ellipsis; width: 300px" />
-                                <input type="submit" value="search" style="margin-left:40% ; margin-top:5px" />
+                                <input type="submit" class="btn btn-primary" value="search" style="margin-left:30% ; margin-top:5px" />
                             </form>
                             <div class='sidebar pad2'>
                                 <div class='heading'>
@@ -66,24 +99,23 @@
 
             </div>
 
+            <div><a id="tofees" href="#" class="scroll-down" address="true" style="bottom:0px;left:35%"></a></div>
 
         </div>
     </section>
 
 
-    <div><a id="tofees" href="#" class="scroll-down" address="true" style="bottom:0px;left:35%"></a></div>
+    
 
     <section>
         <div class="container" id="fees" style="margin-top:150px">
             <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-lg-10 heading-section mb-5">
                     <h2 class="text-black text-center mb-2">Wondering about Fees?</h2>
-                    <h3 class=" text-center text-black" style="margin-top:20px">
-                        Kindergarten term fees
-                    </h3>
+
                     <p class="text-black">
-                        In 2020, it will cost <mark> $455 per term </mark> for a child to attend one of our kindergartens.
-                        A child can attend up to 15 hours of kindergarten per week. There are <mark>4 terms</mark>in the kindergarten year.<br /><br />
+                        In 2020, it will normally cost <strong> $455 per term </strong> for a child to attend one of our kindergartens.
+                        A child can attend up to 15 hours of kindergarten per week. There are <strong>4 terms</strong>in the kindergarten year.<br /><br />
 
                         All your fees go towards maintaining and operating the kindergarten.
                         The fees cover the gap between the cost to run the kindergarten and funding from the State Government.
@@ -94,19 +126,21 @@
                         Independently managed kindergartens
                     </h3>
                     <p class="text-black">
-                        Independently managed kindergartens <mark> set their own fees and structure</mark>. Please contact the individual kindergarten for more information.
+                        <strong>Independently managed kindergartens set their own fees and structure</strong>.
+                        Please contact the individual kindergarten for more information.<br /><br />
                     </p>
-                    <p>
+                    <p class="text-black">
                         What is child care subsidy ? If I have the eligibility?
                     </p>
                     <p><a href="~/Home/CSUBSIDY" class="btn btn-primary" id="navbtn"> Click me </a></p>
 
 
+
                 </div>
-
-
-
             </div>
+
+
+
         </div>
     </section>
     <section>
@@ -120,10 +154,10 @@
 
         <div style="margin-top:10px">
             <div class="multi-button">
-                <button><span class="icon-arrow-left"></span> <a href="~/Home/FSupport" class="button" id="navbtn"> Financial Support </a></button>
+                <button><span class="icon-arrow-left"></span> <a href="~/Home/FinancialSupport" class="button" id="navbtn"> Financial Support </a></button>
 
 
-                <button><a href="~/Home/CSUBSIDY" class="button" id="navbtn"> Child Care Subsidy </a><span class="icon-arrow-right"></span></button>
+                <button><a href="~/Home/EnrollmentMore" class="button" id="navbtn"> Enrolment </a><span class="icon-arrow-right"></span></button>
 
             </div>
         </div>

@@ -154,6 +154,8 @@
     <Content Include="Content\css\bootstrap\bootstrap-reboot.css" />
     <Content Include="Content\css\bootstrap\bootstrap.css" />
     <Content Include="Content\css\bootstrap\subsidyCalcu.css" />
+    <Content Include="Content\css\CheckBox.css" />
+    <Content Include="Content\css\coolSideBar.css" />
     <Content Include="Content\css\css-nav.css" />
     <Content Include="Content\css\jquery-ui.css" />
     <Content Include="Content\css\jquery.fancybox.min.css" />
@@ -165,12 +167,20 @@
     <Content Include="Content\css\magnific-popup.css" />
     <Content Include="Content\css\map.css" />
     <Content Include="Content\css\mediaelementplayer.css" />
+    <Content Include="Content\css\Myfont.css" />
     <Content Include="Content\css\navbtn.css" />
+    <Content Include="Content\css\nice-select.css" />
     <Content Include="Content\css\owl.carousel.min.css" />
     <Content Include="Content\css\owl.theme.default.min.css" />
     <Content Include="Content\css\quickNavigation.css" />
+    <Content Include="Content\css\ReadingProgress.css" />
+    <Content Include="Content\css\returnTop.css" />
     <Content Include="Content\css\SearchMap.css" />
+    <Content Include="Content\css\slick.css" />
+    <Content Include="Content\css\stackedcards.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\section2.css" />
+    <Content Include="Content\css\test.css" />
     <Content Include="Content\images\About.jpg" />
     <Content Include="Content\images\about1.PNG" />
     <Content Include="Content\images\bai12.png" />
@@ -184,6 +194,7 @@
     <Content Include="Content\images\homeBG.png" />
     <Content Include="Content\images\HomeBG1.jpg" />
     <Content Include="Content\images\homeIcon.png" />
+    <Content Include="Content\images\Horiz5.jpg" />
     <Content Include="Content\images\icon2.png" />
     <Content Include="Content\images\icon3.png" />
     <Content Include="Content\images\kgicon.png" />
@@ -235,6 +246,7 @@
     <Content Include="Scripts\js\bootstrap.min.js" />
     <Content Include="Scripts\js\demo1.js" />
     <Content Include="Scripts\js\feesCalcu.js" />
+    <Content Include="Scripts\js\html2pdf.bundle.min.js" />
     <Content Include="Scripts\js\isotope.pkgd.min.js" />
     <Content Include="Scripts\js\jquery-3.3.1.min.js" />
     <Content Include="Scripts\js\jquery-migrate-3.0.1.min.js" />
@@ -248,11 +260,14 @@
     <Content Include="Scripts\js\kinderElig.js" />
     <Content Include="Scripts\js\location.js" />
     <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\js\main1.js" />
     <Content Include="Scripts\js\mediaelement-and-player.min.js" />
     <Content Include="Scripts\js\owl.carousel.min.js" />
     <Content Include="Scripts\js\polyfills.js" />
     <Content Include="Scripts\js\popper.min.js" />
+    <Content Include="Scripts\js\ReturnTop.js" />
     <Content Include="Scripts\js\slick.min.js" />
+    <Content Include="Scripts\js\stackedCards.min.js" />
     <Content Include="Scripts\js\typed.js" />
     <Content Include="Scripts\modernizr-2.6.2.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -281,6 +296,9 @@
     <Content Include="Views\Home\VisualG.cshtml" />
     <Content Include="Views\Home\Differences.cshtml" />
     <Content Include="Views\Home\CSUBSIDY.cshtml" />
+    <Content Include="Views\Home\WhyKinder.cshtml" />
+    <Content Include="Views\Home\ReadyKinder.cshtml" />
+    <Content Include="Views\Home\FinancialSupport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -12,6 +12,19 @@ namespace v2.Controllers
         {
             return View();
         }
+        public ActionResult FinancialSupport()
+        {
+            return View();
+        }
+
+        public ActionResult ReadyKinder()
+        {
+            return View();
+        }
+        public ActionResult WhyKinder()
+        {
+            return View();
+        }
 
         public ActionResult CSUBSIDY()
         {
